@@ -798,8 +798,11 @@ h1, h2, h3, p { margin: 0; }
     <a class="volver" href="#top">← Back</a>
   </div>
   
-  <div class="referencias-contenido">
-    <h2>Referencias</h2>
+  <section id="referencias" class="pagina referencias"> 
+  <a class="volver" href="#top">← Back</a> 
+  
+  <div class="referencias-contenido"> 
+    <h2>Referencias</h2> 
 
     <p>Shih, W. C. (2019). The mind of a greenhouse. <a href="http://shihweichieh.com/The-Mind-Of-A-Greenhouse-2019">http://shihweichieh.com/The-Mind-Of-A-Greenhouse-2019</a></p>
 
@@ -807,7 +810,7 @@ h1, h2, h3, p { margin: 0; }
 
     <p>Google. (2026). Gemini (Versión 3.5 Flash) [Gran modelo de lenguaje]. <a href="https://gemini.google.com/">https://gemini.google.com/</a></p>
  
-    <div class="pie-referencias">
+    <div class="pie-pagina">
       <div class="integrantes">
         <div>Martina<br>Bergamini</div>
         <div>Gracia<br>Navarro</div>
@@ -816,11 +819,37 @@ h1, h2, h3, p { margin: 0; }
         <div>Naomi<br>Valenzuela</div>
       </div>
       
-      <div class="curso-grupo">
+      <div class="curso">
         Pensamiento Computacional 2026-1<br>Grupo 3
       </div>
     </div>
   </div> 
+</section>
+
+<style>
+  /* Contenedor principal que envuelve los nombres y el curso */
+  .pie-pagina {
+    display: flex;
+    justify-content: space-between; /* Envía los nombres al extremo izquierdo y el curso al derecho */
+    align-items: flex-end;         /* Alinea todo el texto en la base inferior */
+    margin-top: 60px;              /* Espacio de separación con los párrafos de arriba */
+    font-family: 'Courier New', Courier, monospace; /* Tipografía estilo máquina de escribir de la foto */
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  /* Contenedor específico de los nombres */
+  .integrantes {
+    display: flex;
+    gap: 24px;                     /* Espacio horizontal idéntico entre cada columna de nombre */
+    text-align: left;
+  }
+
+  /* Contenedor específico del curso */
+  .curso {
+    text-align: right;             /* Alinea las dos líneas de texto hacia la derecha */
+  }
+</style>
 </section>
 </body>
 </html>
